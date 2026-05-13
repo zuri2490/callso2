@@ -1,0 +1,26 @@
+
+:root { --primary: #00d2ff; --bg: #0f172a; --text: #f8fafc; }
+body { background: var(--bg); color: var(--text); height: 100vh; overflow: hidden; font-family: sans-serif; margin: 0; }
+#login-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg); display: flex; align-items: center; justify-content: center; z-index: 2000; }
+.login-card { background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px; text-align: center; border: 1px solid rgba(255,255,255,0.1); }
+#map-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none; }
+#map { width: 100%; height: 100%; }
+.visible { display: block !important; } .hidden { display: none !important; }
+#legend-panel { position: absolute; top: 160px; right: 10px; width: 260px; bottom: 10px; background: rgba(15,23,42,0.95); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; z-index: 1000; padding: 12px; overflow-y: auto; }
+.layer-group-header { background: rgba(0,210,255,0.1); padding: 8px; border-radius: 6px; margin: 10px 0; font-size: 0.8rem; font-weight: bold; border-left: 3px solid var(--primary); color: var(--primary); }
+.stats-header { font-weight: bold; font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; margin-bottom: 5px; }
+.stat-item { display: flex; justify-content: space-between; align-items: center; }
+.legend-color { width: 14px; height: 14px; border-radius: 3px; border: 1px solid rgba(255,255,255,0.2); flex-shrink: 0; }
+#attribute-table-container { position: absolute; bottom: 0; left: 0; right: 280px; height: 35vh; background: #0f172a; border-top: 2px solid var(--primary); z-index: 1001; transition: transform 0.3s; display: flex; flex-direction: column; }
+#attribute-table-container.collapsed { transform: translateY(100%); }
+.table-header { padding: 10px; background: #1e293b; display: flex; justify-content: space-between; align-items: center; }
+.table-wrapper { flex: 1; overflow: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+th { position: sticky; top: 0; background: #334155; padding: 8px; text-align: left; color: #94a3b8; }
+td { padding: 6px 8px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #eee; }
+.selected-row { background: rgba(0,210,255,0.2) !important; }
+
+/* Popup Styles - White Background & Black Text */
+.leaflet-popup-content-wrapper { background: white !important; color: black !important; border-radius: 8px; padding: 0; }
+.leaflet-popup-tip { background: white !important; }
+.leaflet-popup-content { margin: 0 !important; width: auto !important; }

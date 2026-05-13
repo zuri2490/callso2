@@ -1,0 +1,21 @@
+{
+    "layers": [
+        {
+            "name": "Demo Lines",
+            "color": "#00d2ff",
+            "data": {
+                "type": "FeatureCollection",
+                "features": [
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "LineString",
+                            "coordinates": [[-100, 20], [-105, 25]]
+                        },
+                        "properties": {}
+                    }
+                ]
+            }
+        }
+    ]
+}
